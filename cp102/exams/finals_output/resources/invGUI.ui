@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1103</width>
+    <height>573</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Inventory Management System</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" rowspan="4">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>391</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 12pt &quot;Arial&quot;;</string>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Inventory</string>
+       </attribute>
+       <widget class="QTableWidget" name="table">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>511</width>
+          <height>391</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 9pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <column>
+         <property name="text">
+          <string>BARCODE</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>NAME</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>QUANTITY</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>PRICE</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>BRAND</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>SUPPLIER NAME</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QLabel" name="max_quantity">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>410</y>
+          <width>91</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 8pt &quot;Arial&quot;;</string>
+        </property>
+        <property name="text">
+         <string>MAX QUANTITY:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="quantity_filter_input">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>410</y>
+          <width>81</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 8pt &quot;Arial&quot;;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="search_button">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>410</y>
+          <width>81</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 8pt &quot;Arial&quot;;</string>
+        </property>
+        <property name="text">
+         <string>SEARCH</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="refresh_button">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>410</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 8pt &quot;Arial&quot;;</string>
+        </property>
+        <property name="text">
+         <string>REFRESH</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="edit_tab">
+       <attribute name="title">
+        <string>Edit</string>
+       </attribute>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="barcode_label">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>50</y>
+          <width>131</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>BARCODE: </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="name_label">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>79</y>
+          <width>131</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>NAME:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="price_label">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>139</y>
+          <width>131</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PRICE:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="brand_label">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>169</y>
+          <width>131</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>BRAND:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="quantity_label">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>109</y>
+          <width>131</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>QUANTITY:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="supplier_contact_label">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>229</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>CONTACT:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="supplier_name_label">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>199</y>
+          <width>151</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>SUPPLIER NAME: </string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="barcode_input">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>50</y>
+          <width>161</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 7pt &quot;Arial&quot;;
+font: 75 10pt &quot;Arial&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="name_input">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>80</y>
+          <width>161</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 7pt &quot;Arial&quot;;
+font: 75 10pt &quot;Arial&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="quantity_input">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>110</y>
+          <width>161</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 7pt &quot;Arial&quot;;
+font: 75 10pt &quot;Arial&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="price_input">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>140</y>
+          <width>161</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 7pt &quot;Arial&quot;;
+font: 75 10pt &quot;Arial&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="brand_input">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>170</y>
+          <width>161</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 7pt &quot;Arial&quot;;
+font: 75 10pt &quot;Arial&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="supplier_name_input">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>200</y>
+          <width>161</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 7pt &quot;Arial&quot;;
+font: 75 10pt &quot;Arial&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="supplier_contact_input">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>230</y>
+          <width>161</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 7pt &quot;Arial&quot;;
+font: 75 10pt &quot;Arial&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="update_button">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>50</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 10pt &quot;Arial&quot;;</string>
+        </property>
+        <property name="text">
+         <string>UPDATE</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="add_or_create_button">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>100</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 10pt &quot;Arial&quot;;</string>
+        </property>
+        <property name="text">
+         <string>CREATE</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="delete_button">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>150</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 10pt &quot;Arial&quot;;</string>
+        </property>
+        <property name="text">
+         <string>DELETE</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="last_button">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>261</y>
+          <width>41</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 10pt &quot;Arial&quot;;</string>
+        </property>
+        <property name="text">
+         <string>&gt;&gt;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="next_button">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>261</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 10pt &quot;Arial&quot;;</string>
+        </property>
+        <property name="text">
+         <string>&gt;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="previous_button">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>261</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 10pt &quot;Arial&quot;;</string>
+        </property>
+        <property name="text">
+         <string>&lt;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="first_button">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>261</y>
+          <width>41</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 10pt &quot;Arial&quot;;</string>
+        </property>
+        <property name="text">
+         <string>&lt;&lt;</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QTabWidget" name="tableWidget_supplier">
+      <property name="styleSheet">
+       <string notr="true">font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;Arial&quot;;</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Supplier's Contact Information</string>
+       </attribute>
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="1">
+         <widget class="QTableWidget" name="tableWidget">
+          <property name="styleSheet">
+           <string notr="true">font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 75 9pt &quot;MS Shell Dlg 2&quot;;</string>
+          </property>
+          <column>
+           <property name="text">
+            <string>ID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>SUPPLIER</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>CONTACT</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1103</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <includes>
+  <include location="global">Qwidget</include>
+ </includes>
+ <resources/>
+ <connections/>
+</ui>
