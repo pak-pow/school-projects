@@ -1,0 +1,65 @@
+Supercomputer
+
+A supercomputer is a class of extremely powerful computers.
+The term is commonly applied to the fastest high-performance systems available at any given time.
+Such computers are primarily used for scientific and engineering work requiring exceedingly high-speed computations.
+Common applications include testing mathematical models for complex physical phenomena or designs,
+such as climate and weather, the evolution of the cosmos, nuclear weapons and reactors,
+new chemical compounds (especially for pharmaceutical purposes), and cryptology.
+As the cost of supercomputing declined in the 1990s,
+businesses began to use supercomputers for market research and other business-related models.
+
+Distinguishing Features
+
+Supercomputers have certain distinguishing features.
+Unlike conventional computers, they usually have more than one CPU (central processing unit),
+which contains circuits for interpreting program instructions and executing arithmetic and logic operations.
+The use of several CPUs achieves high computational rates, necessitated by the physical limits of circuit technology.
+Electronic signals cannot travel faster than the speed of light,
+imposing a fundamental speed limit for signal transmission and circuit switching.
+Most supercomputers have a large storage capacity and a very fast input/output capability.
+Another characteristic of supercomputers is their use of vector arithmetic—i.e.,
+they can operate on pairs of lists of numbers rather than on single pairs.
+For example, a typical supercomputer can multiply a list of hourly wage rates
+for a group of workers by a list of hours worked in roughly the same time a
+regular computer takes to process one worker’s wages.
+
+Historical Development
+
+Early supercomputers were built by various companies,
+but Seymour Cray defined the field. Cray joined Engineering Research Associates (ERA) in 1951.
+When ERA was taken over by Remington Rand, Inc., Cray left with William Norris to start
+Control Data Corporation (CDC) in 1957. The Cray-designed CDC 1604 replaced vacuum tubes with
+transistors and was popular in scientific labs. IBM responded with the IBM 7030, known as Stretch,
+in 1961, but after financial losses, IBM temporarily withdrew from supercomputers.
+In 1964, Cray’s CDC 6600 became the fastest computer, executing three million
+floating-point operations per second (FLOPS), coining the term supercomputer.
+Cray later founded Cray Research, Inc. (1972), followed by Cray Computer Corporation (1989).
+His Cray-1, introduced in 1976, successfully implemented vector processing, and the Cray X-MP (1982)
+introduced multiprocessing, linking two Cray-1 computers to triple performance.
+The Cray-2 (1985) was the first to exceed one billion FLOPS.
+
+Advancements in Supercomputing
+
+W. Daniel Hillis proposed a new approach, eliminating the CPU bottleneck in
+favor of decentralized controls. In 1983, he co-founded Thinking Machines Corporation and
+introduced the CM-1 (1985), utilizing 65,536 inexpensive one-bit processors to achieve supercomputer performance.
+These became known as massively parallel computers.
+IBM’s Deep Blue used 192 custom processors and defeated world chess champion Garry Kasparov in 1996.
+A year later, its successor (with 256 processors) defeated Kasparov again in a six-game match.
+With the Comprehensive Test Ban Treaty in 1996, the U.S. sought an alternative to nuclear testing,
+leading to the Accelerated Strategic Computing Initiative (ASCI). ASCI Red, built with Intel,
+was the first to achieve 1 TFLOPS (trillion FLOPS) in 1997, using 9,072 Pentium Pro processors.
+In 2002, Japan’s Earth Simulator, developed by NEC, briefly led the supercomputer rankings.
+However, IBM’s Blue Gene/L reached 135 TFLOPS by 2005 and exceeded 500 TFLOPS by 2007. In 2008,
+IBM built Roadrunner, the first computer to exceed 1 petaflop (1,000 TFLOPS), using
+AMD Opteron and Cell Broadband Engines (originally designed for the PlayStation 3).
+
+Future of Supercomputing
+
+Supercomputers now allow simulations based on first-principle physics, enabling breakthroughs in
+climate analysis, medicine, aerospace engineering, and artificial intelligence.
+The biggest challenge remains software optimization—writing programs that efficiently
+distribute computations across thousands or millions of processors.
+IBM’s support for open-source Linux-based systems has driven supercomputer innovation.
+The potential for supercomputers continues to grow, shaping fields from meteorology to quantum physics.
